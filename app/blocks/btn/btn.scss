@@ -1,0 +1,97 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 100%;
+  padding: 0.9rem;
+  font-family: var(--main-font);
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  line-height: 2rem;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  color: #fff;
+  transition-duration: 0.3s;
+  transition-property: color, background-color !important;
+
+  @media screen and (min-width: 1400px) {
+    padding: 1.2rem;
+    font-size: 1.8rem;
+  }
+
+  &--base {
+    background-color: #244c98;
+    color: #fff;
+
+    &:active {
+      background-color: #012864;
+      transition: none;
+    }
+
+    .no-touchevents & {
+      &:hover {
+        background-color: #0d3c86;
+        color: #fff;
+      }
+
+      &:active {
+        background-color: #012864;
+        transition: none;
+      }
+    }
+  }
+
+  &--alt {
+    background-color: transparent;
+    border: 1px solid #244c98;
+    color: #244c98;
+
+    &:active {
+      background-color: #012864;
+      color: #fff;
+      transition: none;
+    }
+
+    .no-touchevents & {
+      &:hover {
+        background-color: #0d3c86;
+        color: #fff;
+      }
+
+      &:active {
+        background-color: #012864;
+        color: #fff;
+        transition: none;
+      }
+    }
+  }
+
+  &--special {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px;
+  }
+
+  &__text {
+    padding-left: 8px;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #fff;
+
+    @media screen and (min-width: 1400px) {
+      width: 44px;
+      height: 44px;
+    }
+  }
+}

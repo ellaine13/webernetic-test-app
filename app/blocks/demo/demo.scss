@@ -1,0 +1,24 @@
+.demo {
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f0f4fc;
+
+  &__left {
+    padding: 24px 24px 18px;
+  }
+
+  &__header {
+    margin-bottom: 14px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 27px;
+    color: #1f4284;
+  }
+
+  &__info {
+    margin-bottom: 18px;
+  }
+}

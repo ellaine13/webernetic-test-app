@@ -1,0 +1,59 @@
+.payment {
+  position: relative;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    .payment--base & {
+      display: none;
+
+      @media screen and (min-width: 1024px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px 20px;
+        width: 272px;
+        margin-bottom: 11px;
+      }
+    }
+
+    .payment--additional & {
+      margin-bottom: 10px;
+
+      @media screen and (min-width: 420px) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &--additional {
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 24px;
+    border-radius: 5px;
+    background-color: rgba(235, 236, 245, 0.65);
+
+    @media screen and (min-width: 420px) {
+      width: 53px;
+      height: 34px;
+    }
+
+    img {
+      max-width: 24px;
+      max-height: 14px;
+
+      @media screen and (min-width: 420px) {
+        max-width: 35px;
+        max-height: 21px;
+      }
+    }
+  }
+}
