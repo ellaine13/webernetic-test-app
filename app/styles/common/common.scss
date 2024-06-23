@@ -1,7 +1,8 @@
 :root {
   --index: calc(1vw + 1vh);
-  --base-padding: 20px;
-  --base-padding-mob: 24px;
+  --base-padding-xs: 14px;
+  --base-padding-sm: 24px;
+  --base-padding-md: 40px;
   --main-font: "Manrope", "Arial", sans-serif;
 }
 
@@ -37,6 +38,10 @@ body {
 
   @media screen and (min-width: 760px) {
     padding-top: 24px;
+  }
+
+  @media screen and (min-width: 1400px) {
+    padding-top: 36px;
   }
 }
 
@@ -78,14 +83,18 @@ a {
 }
 
 .container {
+  position: relative;
   width: 100%;
   margin: 0 auto;
-  position: relative;
-  padding: 0 var(--base-padding-mob);
+  padding: 0 var(--base-padding-xs);
 
-  @media screen and (min-width: 768px) {
-    max-width: 1680px;
-    padding: 0 var(--base-padding);
+  @media screen and (min-width: 360px) {
+    padding: 0 var(--base-padding-sm);
+  }
+
+  @media screen and (min-width: 1400px) {
+    max-width: 1840px;
+    padding: 0 var(--base-padding-md);
   }
 }
 

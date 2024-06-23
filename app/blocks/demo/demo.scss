@@ -3,8 +3,23 @@
   overflow: hidden;
   background: #f0f4fc;
 
+  &__wrapper {
+    @media screen and (min-width: 800px) {
+      display: flex;
+    }
+  }
+
   &__left {
-    padding: 24px 24px 18px;
+    padding: 14px 14px 18px;
+
+    @media screen and (min-width: 360px) {
+      padding: 24px 24px 18px;
+    }
+
+    @media screen and (min-width: 800px) {
+      width: 50%;
+      flex-shrink: 0;
+    }
   }
 
   &__header {

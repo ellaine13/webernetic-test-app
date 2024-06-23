@@ -74,10 +74,14 @@
     display: flex;
     justify-content: space-between;
     border-radius: 50px;
+
+    @media screen and (min-width: 480px) {
+      min-width: initial;
+    }
   }
 
   &__text {
-    padding-left: 8px;
+    padding: 0 18px 0 8px;
   }
 
   &__icon {
