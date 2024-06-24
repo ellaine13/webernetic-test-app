@@ -18,7 +18,7 @@
   transition-duration: 0.3s;
   transition-property: color, background-color !important;
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1200px) {
     padding: 1.2rem;
     font-size: 1.8rem;
   }
@@ -82,6 +82,10 @@
 
   &__text {
     padding: 0 18px 0 8px;
+
+    @media screen and (min-width: 1360px) {
+      padding-left: 10px;
+    }
   }
 
   &__icon {
@@ -93,7 +97,7 @@
     border-radius: 50%;
     background: #fff;
 
-    @media screen and (min-width: 1400px) {
+    @media screen and (min-width: 1200px) {
       width: 44px;
       height: 44px;
     }
