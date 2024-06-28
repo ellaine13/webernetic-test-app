@@ -1,0 +1,59 @@
+<section class="modal hidden">
+  <div class="modal__top">
+    <button type="button" class="modal__close js-modal-close" title="Закрыть">
+      <span class="modal__close-text">Закрыть</span>
+      <div class="modal__close-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </button>
+  </div>
+  <div class="modal__body">
+    <form action="#" class="form form--auth">
+      <div class="form__head">
+        <h2 class="form__title">Войти в систему</h2>
+      </div>
+      <div class="form__body">
+        <div class="form__row">
+          <label class="form-input">
+            <input type="text" placeholder="" class="input" autocomplete="off">
+            <span class="form-input__placeholder">Email/Телефон</span>
+          </label>
+        </div>
+        <div class="form__row">
+          <label class="form-input">
+            <input type="password" placeholder="" class="input" autocomplete="off">
+            <span class="form-input__placeholder">Пароль</span>
+          </label>
+        </div>
+        <div class="form__row form__row--plus">
+          <label class="form__checkbox">
+            <span class="checkbox-input">
+              <input type="checkbox" value="">
+              <span class="checkbox-input__check">
+                <span class="checkbox-input__check-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <rect width="16" height="16" fill="#323232"></rect>
+                    <path d="M4 7.75L7 10.75L12.5 5.25" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+              </span>
+            </span>
+            <span class="form__checkbox-text">Запомнить пароль</span>
+          </label>
+        </div>
+        <div class="form__row">
+          <a href="#" class="form__recover">Восстановить</a>
+        </div>
+      </div>
+      <div class="form__action">
+        <button type="submit" class="btn btn--base">Войти</button>
+        <a href="#" class="btn btn--alt">Зарегистрироваться</a>
+      </div>
+    </form>
+  </div>
+</section>
+  
+<div class="modal-overlay hidden"></div>

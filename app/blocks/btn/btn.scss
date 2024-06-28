@@ -19,13 +19,12 @@
   transition-property: color, background-color !important;
 
   @media screen and (min-width: 1200px) {
-    padding: 1.2rem;
+    padding: 2.1rem;
     font-size: 1.8rem;
   }
 
   &--base {
     background-color: #244c98;
-    color: #fff;
 
     &:active {
       background-color: #012864;
@@ -77,6 +76,10 @@
 
     @media screen and (min-width: 480px) {
       min-width: initial;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 1.2rem;
     }
   }
 

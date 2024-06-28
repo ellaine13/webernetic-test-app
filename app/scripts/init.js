@@ -1,1 +1,2 @@
-// app.switcherHandlers.init();
+app.modalHandlers.init();
+
