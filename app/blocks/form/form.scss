@@ -22,7 +22,11 @@
 
   &__recover {
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.6rem;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 2rem;
+    }
   }
 
   &__action {
