@@ -21,7 +21,7 @@ app.modalHandlers = {
     overlay.addEventListener('click', closeModal);
 
     // close modal when the Esc key is pressed
-    document.addEventListener('keydown', function (e) {
+    document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
         closeModal();
       }
@@ -37,4 +37,3 @@ app.modalHandlers = {
     openModalBtn.addEventListener('click', openModal);
   },
 };
-  
