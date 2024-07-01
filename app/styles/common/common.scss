@@ -73,6 +73,10 @@ a {
   color: #244c98;
   text-decoration: none;
 
+  &:active {
+    color: #012864;
+  }
+
   .no-touchevents & {
     transition: color 0.2s ease;
 
@@ -83,10 +87,6 @@ a {
     &:active {
       color: #012864;
     }
-  }
-
-  &:active {
-    color: #012864;
   }
 }
 
